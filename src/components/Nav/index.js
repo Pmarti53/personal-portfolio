@@ -3,8 +3,8 @@ import React from 'react';
 function Nav() {
 
     const categories = [
-        { name: "front end", description: "front end projects" },
-        { name: "back end", description: "back end projects" },
+        { name: "Projects", description: "web development projects" },
+        { name: "", description: "back end projects" },
     ]
 
     function categorySelected(name) {
@@ -22,11 +22,11 @@ function Nav() {
                 <ul className="flex-row">
                     <li className="mx-2">
                         <a href="#about">
-                            About me
+                            About
                         </a>
                     </li>
                     <li>
-                        <span>Contact</span>
+                        <span href="contact">Contact</span>
                     </li>
                     {categories.map((category) => (
                         <li className="mx-1"
