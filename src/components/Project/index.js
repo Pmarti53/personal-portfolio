@@ -1,18 +1,16 @@
 import React from 'react';
+import ProjectList from '../ProjectList';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Project(props) {
-    const currentCategory = {
-        name: "Front-end",
-        description:
-        "Front-end only projects"
-
-    }
+function Project({ currentCategory }) {
+    const { name, description } = currentCategory;
     return (
         <section>
-            <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
-            <p>{currentCategory.description}</p>
+            <h1 data-testid="h1tag">{capitalizeFirstLetter(name)}</h1>
+            <p>{description}</p>
+            <ProjectList category={currentCategory.name} />
         </section>
+
     );
 }
 
