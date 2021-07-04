@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import './App.css';
 import Nav from './components/Nav';
-import About from './components/About';
+// import About from './components/About';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Project from './components/Project';
-import ContactForm from './components/Contact';
+// import ContactForm from './components/Contact';
 
 
 function App() {
@@ -27,9 +26,9 @@ function App() {
         currentCategory={currentCategory}
       ></Nav>
       <main>
-        <ContactForm></ContactForm>
+        {/* <ContactForm></ContactForm> */}
         <Project currentCategory={currentCategory}></Project>
-        <About></About>
+        {/* <About></About> */}
         <Footer></Footer>
       </main>
 
