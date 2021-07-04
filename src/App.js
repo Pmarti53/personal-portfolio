@@ -5,12 +5,14 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Project from './components/Project';
+import ContactForm from './components/Contact';
 
 
 function App() {
   const [categories] = useState([
+    { name: "About", description: "about me"},
     { name: "Projects", description: "web development projects" },
-    { name: "Resume", description: "Resume"}
+    { name: "Resume", description: "Resume" }
 
   ])
 
@@ -23,13 +25,12 @@ function App() {
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
-        ></Nav>
+      ></Nav>
       <main>
-        <div>
-          <Project currentCategory={currentCategory}></Project>
-          <About></About>
-          <Footer></Footer>
-        </div>
+        <ContactForm></ContactForm>
+        <Project currentCategory={currentCategory}></Project>
+        <About></About>
+        <Footer></Footer>
       </main>
 
     </div>
