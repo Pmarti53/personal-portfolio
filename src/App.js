@@ -9,7 +9,8 @@ import Project from './components/Project';
 
 function App() {
   const [categories] = useState([
-    { name: "Projects", description: "web development projects" }
+    { name: "Projects", description: "web development projects" },
+    { name: "Resume", description: "Resume"}
 
   ])
 
@@ -17,12 +18,12 @@ function App() {
 
   return (
     <div>
-      <Nav>
+      <Header></Header>
+      <Nav
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
-      </Nav>
-      <Header></Header>
+        ></Nav>
       <main>
         <div>
           <Project currentCategory={currentCategory}></Project>
