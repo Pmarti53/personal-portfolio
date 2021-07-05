@@ -21,6 +21,11 @@ main {
   box-sizing: border-box;
 }
 
+.header {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+
 html, body {
   min-height: 100%;
 }
@@ -31,8 +36,10 @@ body {
   font-weight: 600;
   line-height: 1.5;
   font-size: 18px;
+  text-align: center;
   letter-spacing: .1em;
-  background: var(--dark);
+  justify-content: center;
+  background-image: url(../src/assets/cover/cover-image.jpg);
   color: var(--light);
   /* font-family: 'Poiret One', cursive; */
 }
@@ -283,4 +290,9 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+.footer {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center
 }
