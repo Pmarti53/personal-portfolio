@@ -25,13 +25,15 @@ function App() {
       ></Nav>
 
       <main>
-        <About
-          categories={categories}
-          setCurrentCategory={setCurrentCategory}
-          currentCategory={currentCategory}></About>
-        <Project currentCategory={currentCategory}></Project>
-        <ContactForm currentCategory={currentCategory}></ContactForm>
-        <Footer></Footer>
+        <div>
+          <About
+            categories={categories}
+            setCurrentCategory={setCurrentCategory}
+            currentCategory={currentCategory}></About>
+          <Project currentCategory={currentCategory}></Project>
+          <ContactForm currentCategory={currentCategory}></ContactForm>
+          <Footer></Footer>
+        </div>
       </main>
 
     </div>

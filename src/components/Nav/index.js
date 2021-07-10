@@ -9,14 +9,14 @@ function Nav(props) {
         currentCategory,
     } = props;
 
-    
+
     const handleClick = (item) => {
         console.log(item);
         return item;
     };
-    
+
     useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
+        document.title = capitalizeFirstLetter(currentCategory.name);
     }, [currentCategory]);
 
     return (
